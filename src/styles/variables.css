@@ -1,0 +1,39 @@
+/* ===== 桂冠学堂 · 设计变量（现代学堂色调：学院蓝 + 桂冠金） ===== */
+:root {
+  /* 主色 */
+  --gg-primary: #2b56b6;
+  --gg-primary-deep: #1d3f8f;
+  --gg-primary-light: #eaf0fe;
+  --gg-gold: #c99b3c;
+  --gg-gold-light: #fbf3e2;
+  --gg-success: #2fa972;
+  --gg-danger: #e25d58;
+  --gg-warning: #ef9b3a;
+
+  /* 中性色 */
+  --gg-ink: #1f2733;
+  --gg-ink-2: #4a5568;
+  --gg-ink-3: #8a94a6;
+  --gg-line: #e7ebf2;
+  --gg-bg: #f5f7fb;
+  --gg-bg-2: #eef2fa;
+  --gg-card: #ffffff;
+
+  /* 布局 */
+  --gg-header-h: 64px;
+  --gg-container: 1200px;
+  --gg-radius: 12px;
+  --gg-radius-lg: 18px;
+  --gg-shadow: 0 6px 24px rgba(31, 39, 51, 0.08);
+  --gg-shadow-hover: 0 14px 36px rgba(43, 86, 182, 0.16);
+
+  /* 覆盖 Element Plus 主色 */
+  --el-color-primary: #2b56b6;
+  --el-color-primary-light-3: #6484cf;
+  --el-color-primary-light-5: #95aadd;
+  --el-color-primary-light-7: #c2cfee;
+  --el-color-primary-light-8: #d7e0f5;
+  --el-color-primary-light-9: #eaf0fe;
+  --el-color-primary-dark-2: #23479b;
+  --el-border-radius-base: 8px;
+}
