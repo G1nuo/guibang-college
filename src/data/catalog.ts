@@ -4,6 +4,9 @@ import { imgUrl } from '../utils/image'
 /* 公共测试视频流（Google 官方示例视频桶，可直接用于播放器 / 直播演示） */
 const V = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/'
 
+/* 字幕文件：基于 Vite BASE_URL 拼接，兼容 GitHub Pages 子路径部署 */
+const SUBTITLE = `${import.meta.env.BASE_URL}subtitles/zh-demo.vtt`
+
 export const CATEGORIES = [
   '前端开发',
   '后端开发',
@@ -109,7 +112,7 @@ export const courses: Course[] = [
       { title: '第7章 企业级后台综合实战', duration: '62:00' }
     ],
     videoUrl: V + 'BigBuckBunny.mp4',
-    subtitleUrl: '/subtitles/zh-demo.vtt',
+    subtitleUrl: SUBTITLE,
     tags: ['Vue3', 'TypeScript', 'Vite'],
     hot: true,
     cover: imgUrl('在线编程课程封面，Vue.js框架主题，代码屏幕与现代UI，蓝金色调，扁平插画风格'),
@@ -138,7 +141,7 @@ export const courses: Course[] = [
       { title: '第6章 手写 Promise / 节流防抖', duration: '55:15' }
     ],
     videoUrl: V + 'ElephantsDream.mp4',
-    subtitleUrl: '/subtitles/zh-demo.vtt',
+    subtitleUrl: SUBTITLE,
     tags: ['JavaScript', '面试', '进阶'],
     hot: true,
     cover: imgUrl('JavaScript编程课程封面，黄色主题，代码编辑器特写，现代扁平科技风插画'),
@@ -167,7 +170,7 @@ export const courses: Course[] = [
       { title: '第6章 云服务器部署与运维', duration: '43:00' }
     ],
     videoUrl: V + 'ForBiggerBlazes.mp4',
-    subtitleUrl: '/subtitles/zh-demo.vtt',
+    subtitleUrl: SUBTITLE,
     tags: ['Node.js', 'MongoDB', '部署'],
     cover: imgUrl('Node.js后端开发课程封面，服务器机房与绿色Node标志元素，科技感插画'),
     updatedAt: '2026-07-30'
@@ -221,7 +224,7 @@ export const courses: Course[] = [
       { title: '第7章 综合项目：客户流失预测', duration: '58:30' }
     ],
     videoUrl: V + 'ForBiggerFun.mp4',
-    subtitleUrl: '/subtitles/zh-demo.vtt',
+    subtitleUrl: SUBTITLE,
     tags: ['Python', '机器学习', 'scikit-learn'],
     hot: true,
     cover: imgUrl('机器学习课程封面，神经网络节点可视化与Python标志，紫色科技感插画'),
@@ -249,7 +252,7 @@ export const courses: Course[] = [
       { title: '第5章 RAG 知识库完整实现', duration: '60:00' }
     ],
     videoUrl: V + 'ForBiggerJoyrides.mp4',
-    subtitleUrl: '/subtitles/zh-demo.vtt',
+    subtitleUrl: SUBTITLE,
     tags: ['大模型', 'RAG', 'LLM'],
     isNew: true,
     cover: imgUrl('AI大模型应用开发课程封面，聊天机器人与知识图谱，未来科技蓝紫渐变插画'),
@@ -278,7 +281,7 @@ export const courses: Course[] = [
       { title: '第6章 作品集包装与投递', duration: '30:00' }
     ],
     videoUrl: V + 'ForBiggerMeltdowns.mp4',
-    subtitleUrl: '/subtitles/zh-demo.vtt',
+    subtitleUrl: SUBTITLE,
     tags: ['Figma', '作品集', '零基础'],
     cover: imgUrl('UI设计课程封面，手机界面设计稿与色板工具，温暖橙粉配色，现代设计风插画'),
     updatedAt: '2026-07-12'
@@ -331,7 +334,7 @@ export const courses: Course[] = [
       { title: '第6章 电商微服务综合项目', duration: '65:10' }
     ],
     videoUrl: V + 'TearsOfSteel.mp4',
-    subtitleUrl: '/subtitles/zh-demo.vtt',
+    subtitleUrl: SUBTITLE,
     tags: ['Java', 'Spring Boot', '微服务'],
     hot: true,
     cover: imgUrl('Java Spring Boot微服务课程封面，微服务架构图与咖啡元素，橙红色科技风插画'),
@@ -387,7 +390,7 @@ export const courses: Course[] = [
       { title: '第5章 Offer 对比与谈薪技巧', duration: '26:30' }
     ],
     videoUrl: V + 'VolkswagenGTIReview.mp4',
-    subtitleUrl: '/subtitles/zh-demo.vtt',
+    subtitleUrl: SUBTITLE,
     tags: ['简历', '面试', '求职'],
     hot: true,
     cover: imgUrl('求职面试指导课程封面，简历与握手录用通知元素，明亮自信的蓝金配色插画'),
